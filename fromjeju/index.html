@@ -34,11 +34,19 @@
                 || navigator.userAgent.match(/Windows Phone/i);
         }
 
+        function getPathByHash() {
+            if (location.hash && location.hash.indexOf("#") === 0) {
+                return "/" + location.hash.substr(1);
+            } else {
+                return "";
+            }
+        }
+
         window.onload = function() {
             if (isMobile()) {
-                location.href = "https://m.smartstore.naver.com/fromjejudo";
+                location.href = "https://m.smartstore.naver.com/fromjejudo" + getPathByHash();
             } else {
-                location.href = "https://smartstore.naver.com/fromjejudo";
+                location.href = "https://smartstore.naver.com/fromjejudo" + getPathByHash();
             }
         };
     </script>
