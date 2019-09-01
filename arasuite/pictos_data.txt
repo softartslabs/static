@@ -1,0 +1,8 @@
+DOWNLOAD_URL=http://attach.mail.daum.net/bigfile/v1/urls/d/inSZCuZywJd2ti_5Ual3YRxKL2E/59BUhIAsQ7mFpb9RujZtpA
+
+MD5=31812ceb5a4ed8000d5a98c0d32e6d79
+
+RELEASE_DATE=09-01-2019
+
+CHANGELOG=This is a test repo. We don't use MD5 check anymore.
+
