@@ -4,4 +4,4 @@ MD5=31812ceb5a4ed8000d5a98c0d32e6d79
 
 RELEASE_DATE=09-19-2019
 
-CHANGELOG=This is a test repo, merged-20190919.zip.
+CHANGELOG=This is a test repo, merged-20190919.zip including Coreano_verbs.txt.
