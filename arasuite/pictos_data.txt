@@ -1,7 +1,7 @@
-DOWNLOAD_URL=http://attach.mail.daum.net/bigfile/v1/urls/d/G9tEjFndn5StXw4mpnVAxbVqNmE/_UdYrxgjB0Yyeg3QgKpZBA
+DOWNLOAD_URL=http://attach.mail.daum.net/bigfile/v1/urls/d/L3ML8FvwyZtoUvRFpsHEZkdvh6M/Ozw-RcDc-uAcsLvJ95AeHA
 
 MD5=31812ceb5a4ed8000d5a98c0d32e6d79
 
-RELEASE_DATE=09-01-2019
+RELEASE_DATE=09-19-2019
 
-CHANGELOG=This is a test repo, merged-20190901.zip and we don't use MD5 check anymore.
+CHANGELOG=This is a test repo, merged-20190919.zip.
