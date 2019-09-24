@@ -2,6 +2,6 @@ DOWNLOAD_URL=https://softartslabs.github.io/static/arasuite/database.zip
 
 MD5=31812ceb5a4ed8000d5a98c0d32e6d79
 
-RELEASE_DATE=09-25-2019
+RELEASE_DATE=25-09-2019
 
 CHANGELOG=This is new database repo without images.
