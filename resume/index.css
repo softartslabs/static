@@ -1,0 +1,60 @@
+body {
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-image: url("respap.png");
+    background-color: #ffffee;
+    color: black;
+}
+
+a:link {
+    color: #602020;
+}
+
+a:visited {
+    color: #602020;
+}
+
+a:hover {
+    color: #602020;
+}
+
+a:active { 
+    color: #cc0000;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+table.bad-eggs {
+    text-align: center;
+    background: #fff8e8;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+table.bad-eggs td {
+    padding: 5px;
+}
+
+table.bad-eggs td:first-child {
+    width: 100pt;
+}
+
+table.bad-eggs thead td {
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
