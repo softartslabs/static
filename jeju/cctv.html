@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCTV Grid</title>
+  <style>
+    .cctv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 5px;
+      margin: 20px auto;
+      max-width: 1200px;
+      /* 최대 4열로 가득 채우기 위해 */
+    }
+
+    .cctv-video {
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
+
+    .cctv-video canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* 데스크탑일 경우 full width에서 4열 */
+    @media (min-width: 1200px) {
+      .cctv-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CCTV Grid</h1>
+  <div class="cctv-grid">
+    <!-- 12개의 CCTV 비디오 캔버스를 위한 반복 구조 -->
+    <div class="cctv-video"><canvas id="cctv-1"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-2"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-3"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-4"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-5"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-6"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-7"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-8"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-9"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-10"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-11"></canvas></div>
+    <div class="cctv-video"><canvas id="cctv-12"></canvas></div>
+  </div>
+
+  <!-- 스크립트를 한 번만 로드 -->
+  <script src="http://www.todayjeju.kr/js/comm/jsmpg.js?jsCssVer=20240108"></script>
+  <script>
+    // WebSocket 주소를 JSON 객체로 설정
+    const wsUrlMap = {
+      'cctv-1': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8012",
+      'cctv-2': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8006",
+      'cctv-3': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8010",
+      'cctv-4': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8009",
+      'cctv-5': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8008",
+      'cctv-6': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8007",
+      'cctv-7': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8011",
+      'cctv-8': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8005",
+      'cctv-9': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8004",
+      'cctv-10': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8003",
+      'cctv-11': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.160.146:8002",
+      'cctv-12': "wss://proxy.softarts.co.kr/proxy?url=ws://49.50.161.125:8013"
+    };
+
+    // 각 canvas 요소에 WebSocket 연결
+    Object.keys(wsUrlMap).forEach(id => {
+      const canvas = document.getElementById(id);
+      if (canvas) {
+        const client = new WebSocket(wsUrlMap[id]);
+        new window.jsmpeg(client, { canvas: canvas });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
