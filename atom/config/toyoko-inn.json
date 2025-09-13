@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "enabled": true,
+      "enabled": false,
       "hotelCode": "00282",
       "startDate": "2025-09-16",
       "endDate": "2025-09-17",
@@ -14,7 +14,7 @@
       "startDate": "2025-09-17",
       "endDate": "2025-09-18",
       "peopleCount": "1",
-      "filterRoomType": "Single,Double"
+      "filterRoomType": "Single"
     }
   ]
 }
