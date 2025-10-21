@@ -54,7 +54,7 @@
       "startDate": "2025-10-30",
       "endDate": "2025-10-31",
       "peopleCount": "1",
-      "filterRoomType": "Double"
+      "filterRoomType": "Single,Double"
     }
   ]
 }
