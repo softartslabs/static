@@ -14,29 +14,29 @@
       "startDate": "2025-11-03",
       "endDate": "2025-11-04",
       "peopleCount": "1",
-      "filterRoomType": "Single"
+      "filterRoomType": "Double"
     },
     {
-      "enabled": false,
+      "enabled": true,
       "hotelCode": "00282",
-      "startDate": "2025-10-26",
-      "endDate": "2025-10-27",
+      "startDate": "2025-11-02",
+      "endDate": "2025-11-03",
       "peopleCount": "1",
-      "filterRoomType": "Single"
+      "filterRoomType": "Double"
     },
     {
-      "enabled": false,
+      "enabled": true,
       "hotelCode": "00282",
-      "startDate": "2025-10-27",
-      "endDate": "2025-10-28",
+      "startDate": "2025-11-01",
+      "endDate": "2025-10-31",
       "peopleCount": "1",
-      "filterRoomType": "Single"
+      "filterRoomType": "Double"
     },
     {
-      "enabled": false,
+      "enabled": true,
       "hotelCode": "00282",
-      "startDate": "2025-10-28",
-      "endDate": "2025-10-29",
+      "startDate": "2025-10-29",
+      "endDate": "2025-10-30",
       "peopleCount": "1",
       "filterRoomType": "Single"
     },
