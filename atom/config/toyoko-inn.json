@@ -9,7 +9,7 @@
       "filterRoomType": "Single,Double"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "hotelCode": "00282",
       "startDate": "2026-01-09",
       "endDate": "2026-01-10",
